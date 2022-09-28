@@ -1,0 +1,22 @@
+﻿<Window x:Class="Tema2_CalculadoraBasica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_CalculadoraBasica"
+        mc:Ignorable="d"
+        Title="CalculadorBasica" Height="450" Width="800" Icon="Imagenes/128.ico">
+    <Grid>
+        <Button x:Name="CalcularButtom" Content="Calcular" HorizontalAlignment="Left" Margin="433,114,0,0" VerticalAlignment="Top" Width="75" Click="CalcularButtom_Click" IsEnabled="False" IsDefault="True"/>
+        <Button x:Name="LimpiarButtom" Content="Limpiar" HorizontalAlignment="Left" Margin="433,164,0,0" VerticalAlignment="Top" Width="75" Click="LimpiarButtom_Click" IsCancel="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="175,209,0,0" TextWrapping="Wrap" Text="Resultado:" VerticalAlignment="Top" Height="17" Width="63"/>
+        <TextBox x:Name="PrimeraTexbox" HorizontalAlignment="Left" Height="23" Margin="263,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="175,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Operando"/><Run Text="r"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="175,92,0,0" TextWrapping="Wrap" Text="Operando 1" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="175,130,0,0" TextWrapping="Wrap" Text="Operando 2" VerticalAlignment="Top"/>
+        <TextBox x:Name="SegundaTexbox" HorizontalAlignment="Left" Height="23" Margin="263,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TerceraTexbox" HorizontalAlignment="Left" Height="23" Margin="263,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TerceraTexbox_TextChanged"/>
+        <TextBlock x:Name="ResultadoTexBlock" HorizontalAlignment="Left" Margin="275,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87"/>
+
+    </Grid>
+</Window>
